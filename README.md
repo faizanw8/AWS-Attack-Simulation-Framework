@@ -1,4 +1,4 @@
-![image](https://github.com/faizanw8/AWS-Attack-Framework/assets/72298471/fec1aaa6-8245-4275-a71e-5934a1ee6edf)# AWS-Attack-Framework
+# AWS-Attack-Framework
 
 
 To Be Updated!
