@@ -1,0 +1,7 @@
+{
+    "name": "Privilege Escalation",
+    "description": "Simulates a privilege escalation attack by manipulating IAM policies.",
+    "target_aws_account_id": "YOUR_AWS_ACCOUNT_ID",
+    "target_user": "TARGET_USER_TO_ESCALATE"
+  }
+  
