@@ -21,6 +21,11 @@ def hijack_dns_record(hosted_zone_id, domain_name, malicious_ip):
             MaxItems='1'
         )
         
+        # Ensure the record exists
+        if not response['ResourceRecordSets']:
+            print(f"No DNS record found for domain: {domain_name}")
+            return
+
         # Extract the existing DNS record
         record = response['ResourceRecordSets'][0]
         
