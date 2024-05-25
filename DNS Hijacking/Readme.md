@@ -11,3 +11,16 @@ python dns_hijacking.py --zone-id Z1234567890123 --domain example.com --maliciou
 Replace Z1234567890123, example.com, and 192.0.2.123 with the actual Route 53 hosted zone ID, domain name, and malicious IP address, respectively.
 
 This script demonstrates how an attacker could hijack DNS records to redirect traffic from a legitimate domain to a malicious IP address, potentially facilitating various types of attacks, such as phishing or man-in-the-middle attacks.
+
+Prerequisites:
+AWS Credentials: Ensure you have AWS credentials configured that have sufficient permissions to modify Route 53 records. You can configure AWS credentials using the AWS CLI by running aws configure.
+
+Permissions: The IAM user or role running this script must have permissions for the following actions:
+
+route53:ListResourceRecordSets
+route53:ChangeResourceRecordSets
+
+
+Important Considerations:
+Testing Environment: Always test such scripts in a safe and controlled environment. Unauthorized use of these techniques can be illegal and unethical.
+Ethical Usage: Ensure that you have proper authorization to perform such actions on the target AWS account and DNS records. This script is for educational and authorized testing purposes only.
