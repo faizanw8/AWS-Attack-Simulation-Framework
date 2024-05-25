@@ -4,7 +4,7 @@
 
 
 
-Welcome to the AWS Attack Simulation Framework! This toolkit is designed for security researchers, penetration testers, and red teamers to simulate various attack scenarios in AWS environments. Our goal is to provide a comprehensive set of tools to help you identify and mitigate security weaknesses in your AWS infrastructure.
+Welcome to the AWS Attack Simulation Framework! This toolkit is designed for security researchers, penetration testers, and red teamers to simulate various attack scenarios in AWS environments. The end goal is to provide a comprehensive set of tools to help you identify and mitigate security weaknesses in your AWS infrastructure.
 
 ## Features
 ### Privilege Escalation Scenarios
