@@ -1,8 +1,8 @@
 ## This script accepts the following command-line arguments:
 
---zone-id: The ID of the Route 53 hosted zone containing the domain to be hijacked.
---domain: The domain name to be hijacked.
---malicious-ip: The malicious IP address to which traffic will be redirected.
+1. --zone-id: The ID of the Route 53 hosted zone containing the domain to be hijacked.
+2. --domain: The domain name to be hijacked.
+3. --malicious-ip: The malicious IP address to which traffic will be redirected.
 
 To use the script, run it from the command line with the required arguments. For example:
 
