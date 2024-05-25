@@ -5,13 +5,16 @@ def get_token():
     Retrieve a session token from the EC2 instance metadata service (IMDSv2).
     """
     try:
+        print("Requesting IMDSv2 session token...")
         token_response = requests.put(
             'http://169.254.169.254/latest/api/token',
             headers={'X-aws-ec2-metadata-token-ttl-seconds': '21600'}  # Token valid for 6 hours
         )
         if token_response.status_code != 200:
             raise Exception(f"Failed to retrieve session token. HTTP Status Code: {token_response.status_code}")
-        return token_response.text
+        token = token_response.text
+        print("Session token retrieved successfully.")
+        return token
     except requests.exceptions.RequestException as e:
         print(f"HTTP request for token failed: {e}")
         return None
@@ -27,6 +30,7 @@ def get_instance_metadata_v2():
             raise Exception("Failed to obtain session token for IMDSv2.")
 
         # Fetch the IAM role name using the session token
+        print("Requesting IAM role name...")
         role_name_response = requests.get(
             'http://169.254.169.254/latest/meta-data/iam/security-credentials/',
             headers={'X-aws-ec2-metadata-token': token}
@@ -41,6 +45,7 @@ def get_instance_metadata_v2():
         print(f"IAM Role Name: {role_name}")
         
         # Fetch the IAM role credentials using the session token
+        print("Requesting IAM role credentials...")
         role_credentials_url = f'http://169.254.169.254/latest/meta-data/iam/security-credentials/{role_name}'
         credentials_response = requests.get(
             role_credentials_url,
@@ -60,4 +65,7 @@ def get_instance_metadata_v2():
         print(f"Failed to retrieve instance metadata: {e}")
 
 def main():
-    get_ins
+    get_instance_metadata_v2()
+
+if __name__ == "__main__":
+    main()
