@@ -1,5 +1,9 @@
 # AWS Attack Simulation Framework
 
+<img width="700" alt="Amazo" src="https://github.com/faizanw8/AWS-Attack-Simulation-Framework/assets/72298471/d730c7cd-c881-4fd5-b4cc-0e04fabd262d">
+
+
+
 Welcome to the AWS Attack Simulation Framework! This toolkit is designed for security researchers, penetration testers, and red teamers to simulate various attack scenarios in AWS environments. Our goal is to provide a comprehensive set of tools to help you identify and mitigate security weaknesses in your AWS infrastructure.
 
 ## Features
