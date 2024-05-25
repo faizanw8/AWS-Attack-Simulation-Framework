@@ -1,9 +1,7 @@
 {
-	"folders": [
-		{
-			"name": "AWS-Attack-Framework-1",
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }
