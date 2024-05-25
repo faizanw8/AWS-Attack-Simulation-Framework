@@ -1,6 +1,6 @@
 # AWS Attack Simulation Framework
 
-<img width="700" alt="Amazo" src="https://github.com/faizanw8/AWS-Attack-Simulation-Framework/assets/72298471/d730c7cd-c881-4fd5-b4cc-0e04fabd262d">
+<img width="750" alt="Amazo" src="https://github.com/faizanw8/AWS-Attack-Simulation-Framework/assets/72298471/d730c7cd-c881-4fd5-b4cc-0e04fabd262d">
 
 
 
